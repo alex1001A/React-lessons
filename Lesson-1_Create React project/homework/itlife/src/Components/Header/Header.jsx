@@ -1,10 +1,11 @@
-
-
+import Nav from '../Nav/Nav'
 
 export default function Header() {
     return (
         <header className="header">
-            Header
+            <div class="container header__container">
+                <Nav/>
+            </div>
         </header>
     )
 }

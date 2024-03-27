@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* Colors */
+:root {
+    --main-letter-color: #16133D;
+    --add-green-color: #3DB370;
+    --add-grey-color: #7690A8;
+}
+
+/* Fonts */
+
+:root {
+    --regular: 400;
+    --medium: 500;
+    --semibold: 600;
+}
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+
+body {
+    font-family: "Quicksand", sans-serif;
+    color: var(--main-letter-color);
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+/* Header */
+
+.header {
+    margin-bottom: 100px;
+    padding: 23px 0;
+}
+
+.header__container {
+    display: flex;
+    flex-direction: row;
+    gap: 12.6px;
+}
+
+.navigation__logo {
+    width: 200px;
+    height: 35px;
+}
+
+/* Hero section */
+
+.hero {
+    margin-bottom: 100px;
+}
+
+.suptitle {
+    font-weight: var(--regular);
+    line-height: 21px;
+    text-transform: uppercase;
+    color: var(--add-grey-color);
+    margin-bottom: 15px;
+}
+
+.title {
+
+    font-weight: var(--semibold);
+    line-height: 52px;
+    letter-spacing: 0.2px;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.hero__block {
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    gap: 30px;
+}
+
+
+/* Card */
+
+.hero__item {
+    padding: 40px;
+    border: 1px solid var(--add-green-color);
+    border-radius: 8px;
+}
+
+.item-icon {
+    margin-bottom: 30px;
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    border: 1px solid var(--add-green-color);
+    display: flex;
+}
+
+.item-title {
+    font-weight: var(--semibold);
+    line-height: 21.3px;
+    letter-spacing: 0.2px;
+    margin-bottom: 15px;
+}
+
+.item-text {
+    font-weight: var(--regular);
+    line-height: 28px;
+    margin-bottom: 30px;
+    max-width: 275px;
+}
+
+.learn-more {
+    font-weight: var(--semibold);
+    color: var(--add-green-color);
+    transition: 0.5s ease;
+}
+
+.learn-more:hover {
+    color: var(--main-letter-color);
+    transition: 0.5s ease;
+}
+
+/* Footer */
+
+.footer {
+    padding: 40px 135px;
+    background-color: var(--main-letter-color);
+}
+
+.footer__navigation {
+    margin-bottom: 40px;
+}
+
+.footer__social-block {
+    display: flex;
+    gap: 10px;
+}
+
+.footer__social-block_icon {
+    transition: 0.5s ease;
+}
+
+.footer__social-block_icon:hover {
+    transform: scale(1.2);
+    transition: 0.5s ease;
+}
