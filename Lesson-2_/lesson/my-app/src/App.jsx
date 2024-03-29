@@ -12,7 +12,7 @@ export default function App() {
   return (
     <>
       <h1>Test</h1>
-      <Button item={'Sasha'}/>
+      <Button className={'button'} item={'Sasha'}/>
       <Button className={'button--red'}/>
 
     <Card item={shopItem}/>
