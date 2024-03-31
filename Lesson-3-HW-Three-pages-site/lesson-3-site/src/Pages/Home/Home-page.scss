@@ -1,0 +1,10 @@
+.hero {
+    padding-top: 100px;
+    background-color: cornflowerblue;
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+    }
+}
