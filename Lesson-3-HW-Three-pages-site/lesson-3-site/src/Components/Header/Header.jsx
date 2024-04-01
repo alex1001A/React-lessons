@@ -6,6 +6,7 @@ import Logo from '../../img/header/Alex_PNG.png'
 import Cart from '../../img/header/shopping-cart-icon.jpg'
 
 
+
 export default function Header() {
     return (
         <header className='header'>

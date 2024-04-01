@@ -1,5 +1,5 @@
 .hero {
-    padding-top: 100px;
+    padding-top: 50px;
     background-color: cornflowerblue;
 
     &__container {
@@ -15,14 +15,24 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    max-width: 100px;
+    max-width: 150px;
+    margin: 0 auto;
     
     .page-button {
         border: 1px solid black;
-        padding: 15px;
-        background-image: url(../../img/hero/arrow-next.png);
+        padding: 30px;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        cursor: pointer;
+        margin-bottom: 30px;
+
+        &_next {
+            background-image: url(../../img/hero/arrow-next.png);
+        }
+
+        &_prev {
+            background-image: url(../../img/hero/arrow-prev.png);
+        }
     }
 }

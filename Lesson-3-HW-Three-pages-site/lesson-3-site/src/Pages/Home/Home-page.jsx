@@ -5,6 +5,8 @@ import Card from '../../Components/Card/Card'
 import './Home-page.scss'
 
 export default function Home() {
+
+    
     
     const [count, setPageCount] = useState(1);
     const maxPageCount = 42
@@ -20,8 +22,8 @@ export default function Home() {
     return (
         <section className="hero">
             <div className="button-wrap">
-                <button onClick={nextPage} className='page-button page-button_next'></button>
-                <button onClick={prevPage} className='page-button page-button_prev'></button>
+                <div onClick={prevPage} className='page-button page-button_prev'></div>
+                <div onClick={nextPage} className='page-button page-button_next'></div>
             </div>
             <div className="container hero__container">
                 <Card pageCount={count}/>
@@ -29,3 +31,4 @@ export default function Home() {
         </section>
     )
 }
+
