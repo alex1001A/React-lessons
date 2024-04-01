@@ -7,4 +7,22 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 50px;
     }
+    
+}
+
+.button-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100px;
+    
+    .page-button {
+        border: 1px solid black;
+        padding: 15px;
+        background-image: url(../../img/hero/arrow-next.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
