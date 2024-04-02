@@ -1,0 +1,9 @@
+// Wrapper
+
+// Container
+.container {
+    min-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
