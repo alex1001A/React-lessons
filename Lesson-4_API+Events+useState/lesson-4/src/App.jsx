@@ -19,17 +19,15 @@ export default function App() {
       <main>
         <Routes>
           <Route path='/' element={<Home />} />
-          {/* <Route path='/sasha1' element={<SinglePost />} /> */}
-          {data?.results.map(item => 
-          <Route key={item.id} path={`/page/${item.name}`} element={<SinglePost item={item}/>}/>
+          {data?.results.map(item =>
+            <Route key={item.id} path={`/page/${item.name}`} element={<SinglePost item={item} />} />
           )}
 
         </Routes>
       </main>
-      {/* <SinglePost item={data?.results[0]}/> */}
       <h2>Footer</h2>
     </>
-    
+
   )
 }
 
