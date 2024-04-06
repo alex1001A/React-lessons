@@ -1,0 +1,7 @@
+// Variable
+@import './variable/color.scss'; //Переменные лучше подлючать перед Глобал - 
+// потому что в Глобал могут использоваться переменные от шрифтов, цвета и т.д.
+
+// Global
+@import './global/reset.scss';
+@import './global/global.scss';

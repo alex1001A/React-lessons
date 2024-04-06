@@ -8,7 +8,7 @@ import SinglePost from './pages/Components/single-post'
 
 export default function App() {
 
-  const { data, isLoading } = useFetch('https://rickandmortyapi.com/api/character')
+  const { data } = useFetch('https://rickandmortyapi.com/api/character')
 
   console.log(data?.results);
 
