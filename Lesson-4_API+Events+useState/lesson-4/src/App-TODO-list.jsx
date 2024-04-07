@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; // Імпортуємо з Реакт бібліотеки 
 
 
 const users = [
@@ -23,7 +23,7 @@ function plus() {
   let age = inp2.current.value
   
 
-  setOut([...out, {id:out.length + 1, name: name, age: age}])
+  setOut([...out, {id: out.length + 1, name: name, age: age}])
   setCount(++out.length)
 
   console.log(out);
